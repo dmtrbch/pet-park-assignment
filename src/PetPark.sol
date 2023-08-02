@@ -27,7 +27,6 @@ contract PetPark is Ownable {
 
     mapping(AnimalType => uint256) public animalCounts;
     mapping(address => User) public userDetails;
-    mapping(address => bool) public userHasBorrowed;
 
     event Added(AnimalType animalType, uint256 animalCount);
     event Borrowed(AnimalType animalType);
